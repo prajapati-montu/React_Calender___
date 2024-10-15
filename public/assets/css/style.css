@@ -1,0 +1,1131 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FAFAF8;
+}
+
+/* General Layout */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  padding: 127px 20px 0 20px;
+  width: 252px;
+  height: 1299px;
+  background-color: #ffffff;
+ 
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease-in-out;
+  /* Animation for toggle */
+  position: relative;
+  border-radius: 0 30px 0 0 !important;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar li svg {
+  margin-right: 10px;
+}
+
+.dropdown {
+  margin-left: 20px;
+}
+
+
+
+.nav-icon {
+  width: 20px; /* Adjust size as needed */
+  height: 20px;
+  margin-right: 15.56px; /* Adds space between icon and text */
+}
+
+.dropdown {
+  padding-left: 20px; /* Indent dropdown items */
+}
+
+ul li a {
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #312522; /* Adjust as needed */
+  font-weight: 400;
+
+}
+
+ul li a:hover,img:hover {
+  color: #FFAD00; /* Highlight color on hover */
+}
+ul li a.active {
+  color: #FFAD00; /* Active link color */
+  font-weight: 600; /* Optional: Make active link bold */
+}
+
+
+
+
+.dropdown li {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Sidebar list items */
+.sidebar ul li {
+  width: 216.35px;
+  height: 35px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.rbc-row-content {
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 0 !important;
+}
+.modal-header-top-img-text{
+  display: flex;
+}
+.sidebar ul li svg {
+  margin-right: 10px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.sidebar ul li:hover {
+  background-color: #FFFAEF;
+  color: #FFAD00;
+}
+
+.sidebar ul li:hover svg {
+  color: #FFAD00;
+}
+
+/* Sidebar Toggle Button */
+.toggle-btn {
+  display: none;
+  background-color: #F1B942;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Close Button in Sidebar */
+.close-btn {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #F1B942;
+}
+
+/* Calendar Section */
+.main-content {
+  width: 100%;
+  background: #FAFAF8;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedule-btn {
+  background-color: #F1B942;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 50px;
+  font-weight: 400;
+}
+
+.calendar-container {
+  grid-column: span 1;
+}
+
+.schedule-music-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  color: #333;
+}
+
+.schedule-section,
+.music-section {
+  margin-bottom: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+h3 {
+  /* font-size: 16px; */
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #000;
+}
+
+.schedule-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 10px;
+}
+
+.schedule-item {
+  padding: 5px 15px 0px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  height: 22px;
+  /* line-height: 16.34px; */
+}
+
+.listen {
+  background-color: #D3D3D3;
+  /* line-height: 16.34px; */
+}
+
+.learn {
+  background-color: #FFC0CB;
+}
+
+.work-out {
+  background-color: #FFDEAD;
+}
+
+.study {
+  background-color: #D1FFD1;
+}
+
+.practice {
+  background-color: #D1C4E9;
+}
+
+.other {
+  background-color: #A9A9A9;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  /* Center the buttons */
+}
+
+.nav-button {
+  background-color: transparent;
+  /* Button background color */
+  color: #A8A8A8;
+  border-radius: 50% !important;
+  border: 1px solid #A8A8A8;
+  /* No border */
+  padding: 8px 12px;
+  /* Padding for the button */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  margin: 0 5px;
+  /* Space between buttons */
+  font-size: 1rem;
+  /* Adjust font size */
+}
+
+.music-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.music-header {
+  display: flex;
+  /* Use flexbox for layout */
+  align-items: center;
+  /* Center items vertically */
+  justify-content: space-between;
+  /* Space between header text and icon */
+}
+
+.settings-icon {
+  margin-left: 10px;
+  /* Space between the heading and the icon */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  color: #A1A1A1;
+  /* Icon color */
+}
+
+.music-playlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.playlist-toggle {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Playlist Toggle Switch */
+.playlist-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Space between the switch and the text */
+}
+
+/* Hidden checkbox input */
+.switch-input {
+  display: none;
+}
+
+/* Label that acts as the switch */
+.switch-label {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  /* Switch width */
+  height: 26px;
+  /* Switch height */
+  background-color: transparent;
+  /* Default switch background */
+  border-radius: 50px;
+  /* Rounded edges */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 1px solid #F1B942;
+}
+
+/* The toggle button inside the switch */
+.switch-button {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  font-size: 12px;
+  /* Adjust the size of the icon */
+  color: #fff;
+  /* Icon color */
+}
+
+/* Switch behavior when toggled to play (move the button to the right) */
+.switch-input:checked+.switch-label .switch-button {
+  transform: translateX(24px);
+  /* Shift the button to the right */
+  background-color: #F1B942;
+  /* Yellow button when playing */
+}
+
+/* Switch background color change on "Play" */
+.switch-input:checked+.switch-label {
+  background-color: transparent;
+  /* Green background when playing */
+}
+
+/* Switch background color change when paused */
+.switch-label {
+  background-color: transparent;
+  /* Default grey background */
+}
+
+/* Add extra styling for play and stop buttons */
+.switch-button.play {
+  background-color: #A8A8A8;
+  /* Yellow background when playing */
+}
+
+.switch-button.pause {
+  background-color: #ffcc00;
+  /* Grey background when paused */
+}
+
+/* Delete button */
+.delete-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #A8A8A8;
+  /* Dustbin icon color */
+  transition: color 0.3s;
+}
+
+.delete-button:hover {
+  color: red;
+  /* Change color to red on hover */
+}
+
+.delete-button svg {
+  font-size: 20px;
+  /* Icon size */
+}
+
+.share-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #F1B942;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.share-btn svg {
+  margin-right: 5px;
+}
+
+.custom-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  /* gap: 8%; */
+}
+
+.prev-btn,
+.next-btn {
+  width: 40.76px;
+  height: 33.35px;
+  background-color: transparent;
+  border: 0.93px solid #DCDFE3;
+  color: #666E7D;
+  /* padding: 10px 20px; */
+  border-radius: 3.71px;
+  cursor: pointer;
+}
+
+.current-date {
+  font-size: 12px;
+  font-weight: 600;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+line-height: 18.53px;
+color: #3B3E45;
+margin-top: 7.17px;
+/* margin-left: 14.82px;
+margin-right: 14.82px; */
+}
+
+.custom-toolbar-v2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* background-color: #f0f0f0; */
+}
+
+.navigation-buttons-v2 button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #DCDFE3;
+  border: none;
+  cursor: pointer;
+}
+.react-calendar {
+  width: 350px;
+  max-width: 100%;
+  background: white;
+  /* border: 1px solid #a0a096; */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+  border: none !important;
+  margin-top: 30.54px;
+}
+abbr {
+  text-decoration: none;
+}
+
+.view-tabs-container-v2 {
+  /* width: 153.68px; */
+  height: 31.93px;
+  display: flex;
+  border: 0.87px solid #DCDFE3; /* Create the surrounding box */
+  border-radius: 3.48px;
+  overflow: hidden;
+}
+
+.tab-v2 {
+  font-size: 12px;
+  font-weight: 400px;
+  line-height: 17.41px;
+  padding: 6px 20px;
+  cursor: pointer;
+  background-color: #DCDFE3; /* Default background color */
+  border-right: 1px solid #ddd; /* Dividing line between tabs */
+  transition: background-color 0.3s ease;
+}
+
+.tab-v2:last-child {
+  border-right: none; /* Remove right border from the last tab */
+}
+
+.tab-v2.active-v2 {
+  background-color: #F1B942; /* Highlight color for active tab */
+  color: white;
+}
+
+.schedule-btn-v2 {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #F1B942;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.plus-icon-v2 {
+  margin-right: 5px;
+}
+
+
+.view-options {
+  display: flex;
+  gap: 10px;
+}
+
+.view-btn {
+  background-color: #f4f4f4;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.view-btn:hover {
+  background-color: #F1B942;
+  color: white;
+}
+
+.calender-hole-section {
+  /* width: 1175px; */
+  height: 964px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 35px 2px #00000026;
+  border-radius: 8px;
+  margin: 0 34px 34px 34px;
+  padding-bottom: 25px;
+}
+
+.calender-hole-section2 {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  /* gap: 20px; */
+}
+
+/* Header Section */
+.header-section {
+  padding: 20px;
+}
+
+/* Top navigation */
+.top-nav {
+  margin-top: 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.search-bar {
+  margin-left: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+  color: #A1A1A1;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.top-nav-right {
+  margin-right: 84px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.premium {
+  font-weight: 400;
+  line-height: 21.79px;
+  font-size: 16px;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.get-app-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  /* padding: 10px 20px; */
+  padding: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 104px;
+  height: 35px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.icons i {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.notification-icon {
+  background-image: url('notification-icon-path');
+  background-size: cover;
+}
+
+.profile-icon {
+  background-image: url('profile-icon-path');
+  background-size: cover;
+}
+
+/* Back to Library */
+.back-to-library {
+  padding: 10px 0;
+  margin-left: 30px;
+}
+
+.back-to-library a {
+  color: #D8D8D8;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16.44px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Tabs */
+.tabs {
+  margin-top: 33px;
+  margin-left: 30px;
+  display: flex;
+  gap: 11px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background-color: #ffffff;
+  border: none;
+  width: 74px;
+  height: 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 16.34px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+}
+
+.tab.active,
+.tab:hover {
+  background-color: #F1B942;
+  color: white;
+  
+}
+
+/* Calendar Section Header */
+.calendar-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #3B3E45;
+  font-weight: 600;
+  border-bottom: 2px solid #A8A8A8;
+}
+
+/* Calendar header styling */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px 20px; */
+  padding: 35px 10px 25px 43px;
+  border-bottom: 2px solid #A8A8A8;
+  /* margin: 0 10px 0 0; */
+}
+
+/* Google Calendar Toggle Section */
+.google-calendar-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Space between the lock icon, text, and toggle */
+}
+
+.lock-icon {
+  color: #333;
+  /* Lock icon color */
+  font-size: 16px;
+}
+
+/* Styling for the toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #312522;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked+.slider {
+  background-color: #F1B942;
+}
+
+input:checked+.slider:before {
+  transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.footer-copyright-icon {
+  display: flex;
+  margin-top: 10px;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #555;
+  text-decoration: none;
+  margin: 0 30px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social-icons a svg {
+  font-size: 14px; /* Adjust the size of the icon */
+  /* height: 30px; 
+  width: 30px; */
+  color: #000000;
+  background-color: white;
+  border-radius: 50%;
+  padding: 6px;
+  margin: 0 10px;
+}
+.footer-social-icons {
+  margin-left: 23px;
+}
+.footer-social-icons a:hover {
+  color: #555;
+}
+.rbc-timeslot-group {
+  border-bottom: 1px solid #ddd;
+  min-height: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  background: white !important;
+}
+.rbc-row-content {
+  background: white !important;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 4;
+}
+.rbc-day-slot .rbc-event, .rbc-day-slot .rbc-background-event {
+  background: #DCDFE3 !important;
+  border: 1px solid #265985;
+  display: flex;
+  max-height: 100%;
+  min-height: 20px;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  overflow: hidden;
+  position: absolute;
+}
+.rbc-day-slot .rbc-event-label {
+  flex: none;
+  padding-right: 5px;
+  width: auto;
+  color: #3B3E45;
+  font-weight: 400;
+  font-size: 9.31px;
+  line-height: 12.41px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.rbc-day-slot .rbc-event-content {
+  width: 100%;
+  flex: 1 1;
+  word-wrap: break-word;
+  line-height: 1;
+  height: 100%;
+  min-height: 1em;
+  color: #3B3E45;
+  font-weight: 400;
+}
+/* .footer-copyright {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #777;
+} */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.modal-body h4 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.modal-body p {
+  font-size: 0.9rem;
+}
+
+.playlist-item {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.playlist-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.playlist-details p {
+  margin: 0;
+}
+
+.show-more {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  text-align: right;
+}
+
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+  .search-bar {
+    margin-left: 15%;
+  }
+  .calender-hole-section {
+    /* width: 100%; */
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 35px 2px #00000026;
+    border-radius: 8px;
+    margin: 0 34px 34px 34px;
+    padding-bottom: 25px;
+} 
+.react-calendar {
+  width: auto !important;
+
+}
+.custom-toolbar-v2 {
+  display: inline;
+ 
+  align-items: center;
+  padding: 10px;
+  /* background-color: #f0f0f0; */
+}
+.navigation-buttons-v2 {
+  margin-bottom: 10px;
+}
+.view-tabs-container-v2 {
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    z-index: 999;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 20px 0;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .close-btn {
+    display: block;
+  }
+
+  .main-content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .schedule-item {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+
+  .playlist-toggle {
+    justify-content: flex-start;
+  }
+
+  .share-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .calendar-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .google-calendar-toggle {
+    margin-top: 10px;
+  }
+
+  .top-nav {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .top-nav-right {
+    gap: 12px;
+    margin-right: 10px;
+  }
+
+  .tabs {
+    display: block;
+    margin: 0;
+  }
+
+  .tab {
+    margin: 5px 5px;
+  }
+
+  .calender-hole-section2 {
+    display: initial;
+  }
+
+  .custom-toolbar {
+    display: initial;
+  }
+
+  .view-options {
+    gap: 30px;
+    padding: 0 0 10px 0;
+  }
+
+  .rbc-time-view {
+    display: inline-grid !important;
+    overflow: scroll;
+  }
+
+  .share-btn {
+    font-size: 0.8rem;
+    padding: 7px 14px;
+  }
+  .footer-copyright-icon {
+    display: block;
+  }
+  .cdce {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .calender-hole-section {
+    /* width: 100%; */
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 35px 2px #00000026;
+    border-radius: 8px;
+    margin: 0 34px 34px 34px;
+    padding-bottom: 25px;
+} 
+.react-calendar {
+  width: fit-content !important;
+
+}
+.cdce {
+  display: flex;
+}
+  .search-bar {
+    margin-left: 15%;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    z-index: 999;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 20px 0;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .close-btn {
+    display: block;
+  }
+
+  .calender-hole-section2 {
+    display: initial;
+  }
+
+}
